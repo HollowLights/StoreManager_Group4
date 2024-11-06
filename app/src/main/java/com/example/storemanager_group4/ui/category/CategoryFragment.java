@@ -1,4 +1,4 @@
-package com.example.storemanager_group4.ui.home;
+package com.example.storemanager_group4.ui.category;
 
 import android.os.Bundle;
 
@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 
 import com.example.storemanager_group4.R;
 
-public class HomeFragment extends Fragment {
+public class CategoryFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
+        View root = inflater.inflate(R.layout.fragment_category, container, false);
         return root;
     }
 }

@@ -1,7 +1,7 @@
 package com.example.storemanager_group4.model;
 
 public class User {
-    private int userId;
+    private String userId;
     private String fullName;
     private String phone;
     private String address;
@@ -22,9 +22,34 @@ public class User {
     public static final String COLUMN_PASSWORD = "password";
     public static final String COLUMN_ROLE = "role";
     public static final String COLUMN_IMAGE = "image";
+
+    public User(){
+
+    }
+
+    public User(String userId, String fullName, String phone, String password, String email) {
+        this.userId = userId;
+        this.fullName = fullName;
+        this.phone = phone;
+        this.email = email;
+        this.password = password;
+    }
+
+    public User(String address, String dob, String email, String fullName, byte[] image, String password, String phone, int role, String userId) {
+        this.address = address;
+        this.dob = dob;
+        this.email = email;
+        this.fullName = fullName;
+        this.image = image;
+        this.password = password;
+        this.phone = phone;
+        this.role = role;
+        this.userId = userId;
+    }
+
     // Getters and Setters
-    public int getUserId() { return userId; }
-    public void setUserId(int userId) { this.userId = userId; }
+    public String getUserId() { return userId; }
+    public void setUserId(String userId) { this.userId = userId; }
 
     public String getFullName() { return fullName; }
     public void setFullName(String fullName) { this.fullName = fullName; }
