@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.PRMGroup4"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -8,18 +12,84 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.StoreManager_Group4"
+        android:theme="@style/Theme.Design.Light.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".activity.base.RegistrationActivity"
+            android:name=".activity.Order.OrderDetailAdmin_Activity"
             android:exported="false" />
         <activity
-            android:name=".activity.base.MainActivity"
-            android:exported="true" />
+            android:name=".activity.User.PersonalPageAdmin_Activity"
+            android:exported="false" />
         <activity
-            android:name=".activity.base.LoginActivity"
+            android:name=".activity.Order.OrderAdmin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Product.SearchProduct_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ultilities.ChangePassword_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Category.Category_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.User.PersonalPageUser_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Order.Order_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.User.AccountAdmin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Order.Cart_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Product.ProductDetail_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ultilities.HomePageAdmin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ultilities.Register_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.User.EditAccount_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.User.AddAccount_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Category.CategoryAdmin_Actvity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Product.EditProduct_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Product.ProductAdmin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Product.AddProduct_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Category.EditCategory_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ultilities.HomePageUser_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Order.OrderDetail_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Category.AddCategory_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ultilities.Login_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ultilities.MainActivity"
+
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
